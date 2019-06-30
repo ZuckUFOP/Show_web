@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Show Web</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/padrao.css' %}">
+</head>
+<body>
+	{%if pergunta%}
+	<div class="pergunta">
+		{{pergunta.texto_da_pergunta}}
+	</div>
+	{%if lista_de_respostas %}
+	<nav class="lista_de_respostas">
+		<ul>
+			{% for resposta in lista_de_respostas%}
+				<li><button class="normal" onclick="clique('{{resposta.validade}}')" onmouseenter="entrada(this)" onmouseleave="saida(this)"> {{resposta.texto_da_resposta}}</button></li>
+			{%endfor%}
+		</ul>
+	</nav>
+	{%else%}
+	<p> Ocorreu algum erro</p>
+	{%endif%}
+	{%else%}
+	<p> Ocorreu algum erro</p>
+	{%endif%}
+	<script type="text/javascript" src="{% static 'polls/js/actions.js'%}"></script>
+<body>
+</html>

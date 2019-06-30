@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	<title>Show Web</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="{% static 'polls/padrao.css' %}">
+</head>
+<body>
+	<div>
+		<img class = "logo" src="{%static 'polls/images/Logo.png' %}" alt="Logo" width="200px" height="200px">
+	</div>
+	<div class ="container">
+	{%if lista_categoria%}
+	<nav class="lista_de_categorias">
+		<ul>
+			{% for categoria in lista_categoria%}
+				<li><button class="botoes"> <a class= "no-underline" href="/polls/{{categoria.nome_categoria}}/1/">{{categoria.nome_categoria}}</a></button></li>
+			{%endfor%}
+		</ul>
+	</nav>
+	{%else%}
+		<p>Nenhuma categoria dsponivel</p>
+	{%endif%}
+	</div>
+</body>
+</html>

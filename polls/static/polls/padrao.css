@@ -1,0 +1,114 @@
+body {
+	background-color: red;
+	background-image:url("images/linha_back.png");
+	background-position:center;
+	background-repeat: repeat-y;
+	width: 200px;
+	align-items:center;
+}
+
+.container {
+	width: 940px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.no-underline:link{
+	text-decoration:none;
+	color:black;
+}
+a:visited{
+	color:black;
+}
+
+.botoes{
+	background: yellow;
+	border:1px solid black;
+	border-radius:10px;
+	font-size: 1.4em;
+	color:black;
+	width: 150px;
+	height: 50px;
+}
+
+.normal{
+	background: yellow;
+	border:5px solid black;
+	border-radius:10px;
+	font-size: 1.4em;
+	color:black;
+	width: 600px;
+	height: 100px;
+	display: block;
+}
+.normal ul {
+	margin: 0 auto;
+	padding: 15px;
+	margin: 5px auto;
+}
+
+.normal ul li {
+	display: inline-block;
+	padding: 20px;
+	margin-left: auto;
+    margin-right: auto;
+}
+.destacado{
+	background: yellow;
+	border:5px solid red;
+	border-radius:10px;
+	font-size: 1.4em;
+	color:black;
+	width: 600px;
+	height: 100px;
+	display: block;
+}
+
+.destacado ul {
+	margin: 0 auto;
+	padding: 15px;
+	margin: 5px auto;
+}
+
+.destacado ul li {
+	display: inline-block;
+	padding: 20px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.lista_de_categorias{
+	display: flex;
+	width:1000px;
+	margin-left: 175px
+}
+
+.lista_de_categorias ul {
+	margin: 0 auto;
+	padding: 15px;
+	margin: 5px auto;
+}
+
+.lista_de_categorias ul li {
+	display: inline-block;
+	padding: 20px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+img.logo{
+	display: block;
+    margin-left: 575px;
+    margin-right: auto;
+}
+
+div.pergunta{
+	border:5px solid black;
+	border-radius:10px;
+	background-color: yellow;
+	width: 1200px;
+	height:auto;
+	padding: 50px;
+	margin: 20px;
+}
